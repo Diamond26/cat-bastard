@@ -292,6 +292,30 @@ export const CATS: readonly CatSkin[] = [
     pattern: 'tabby',
   },
 
+  {
+    id: 'vetro',
+    name: 'VETRO',
+    blurb: 'Si vede attraverso, come il pavimento della torre. Sotto c\'è sempre qualcosa, ed è sempre molto lontano',
+    yarn: 17,
+    fur: MATERIAL.glass,
+    marks: MATERIAL.ice,
+    eye: MATERIAL.sapphire,
+    nose: MATERIAL.skin,
+    pattern: 'plain',
+  },
+
+  {
+    id: 'ottone',
+    name: 'OTTONE',
+    blurb: 'Il colore dei congegni della torre: perni, catene, contrappesi. Roba che si muove sempre uguale, come te',
+    yarn: 18,
+    fur: MATERIAL.brass,
+    marks: MATERIAL.iron,
+    eye: MATERIAL.amber,
+    nose: MATERIAL.skin,
+    pattern: 'tabby',
+  },
+
   // ------------------------------------------------------------- le imprese
   // Da qui in giù i gomitoli non c'entrano niente: sono i gatti che si prendono
   // facendo qualcosa che nessuno ha chiesto. Restano estetici come gli altri —
@@ -387,6 +411,23 @@ export const CATS: readonly CatSkin[] = [
     eye: MATERIAL.faience,
     nose: MATERIAL.sandstone,
     pattern: 'points',
+  },
+  {
+    id: 'contrappeso',
+    name: 'CONTRAPPESO',
+    blurb: 'Ferro e piombo, con gli anelli spenti lungo la schiena. Ne aveva quattro, e li hai spenti stando fermo nel posto giusto',
+    yarn: 0,
+    feats: [FEAT.rovescio],
+    // Come per Lucio e per la Sfinge, non è un easter egg: sta in fondo
+    // all'ultimo livello e ci arriva chiunque giochi fino in fondo.
+    // L'indovinello quindi non nasconde cosa fare, dice **come**: e come, qui,
+    // è l'unica cosa che non viene in mente da sola.
+    riddle: 'In fondo alla torre c\'è chi ribalta la stanza. Non provare a colpirlo: togligli i posti in cui scansarsi, e lascia che sia lui a farsi cadere addosso il pavimento',
+    fur: MATERIAL.iron,
+    marks: MATERIAL.lead,
+    eye: MATERIAL.violet,
+    nose: MATERIAL.iron,
+    pattern: 'tabby',
   },
   {
     id: 'gothic',
